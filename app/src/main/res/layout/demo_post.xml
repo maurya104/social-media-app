@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <View
+            android:id="@+id/view10"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/white_circle"
+            android:backgroundTint="#E6E5E5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <View
+            android:id="@+id/view13"
+            android:layout_width="110dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="8dp"
+            android:background="#E6E5E5"
+            app:layout_constraintBottom_toTopOf="@+id/view14"
+            app:layout_constraintStart_toEndOf="@+id/view10"
+            app:layout_constraintTop_toTopOf="@id/view10"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <View
+            android:id="@+id/view14"
+            android:layout_width="80dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="4dp"
+            android:background="#E6E5E5"
+            app:layout_constraintBottom_toBottomOf="@id/view10"
+            app:layout_constraintStart_toStartOf="@id/view13"
+            app:layout_constraintTop_toBottomOf="@+id/view13" />
+
+        <View
+            android:id="@+id/view15"
+            android:layout_width="0dp"
+            android:layout_height="180dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/follow_active_btn"
+            android:backgroundTint="#E6E5E5"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintStart_toStartOf="@id/view10"
+            app:layout_constraintTop_toBottomOf="@id/view10" />
+
+        <View
+            android:id="@+id/view16"
+            android:layout_width="0dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="8dp"
+            android:background="#E6E5E5"
+            app:layout_constraintEnd_toEndOf="@id/view15"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@id/view15"
+            app:layout_constraintTop_toBottomOf="@id/view15" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</RelativeLayout>
